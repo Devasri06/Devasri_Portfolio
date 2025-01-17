@@ -7,10 +7,9 @@ interface Props {
 const { currentPath } = Astro.props;
 
 const navItems = [
-  { name: "Home", path: "/" },
-  { name: "Services", path: "/services" },
-  { name: "About", path: "/about" },
-  { name: "Contact", path: "/contact" },
+  {
+
+  }
 ];
 
 const socialLinks = [
@@ -37,29 +36,14 @@ const socialLinks = [
 ];
 ---
 
-<nav class="fixed top-0 w-full bg-white shadow-md z-50">
+<nav class="fixed top-0 w-full bg-gray-700 z-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16">
-      <!-- Logo -->
-      <div class="flex-shrink-0">
-        <a href="/"><img src="logo.svg" alt="" /></a>
-      </div>
-
+      
       <!-- Desktop Navigation -->
       <div class="hidden md:flex items-center space-x-8">
         {
-          navItems.map((item) => (
-            <a
-              href={item.path}
-              class={`text-sm  transition-colors duration-200 ${
-                currentPath === item.path
-                  ? "text-red-600 font-bold"
-                  : "text-gray-700 font-medium hover:text-red-600"
-              }`}
-            >
-              {item.name}
-            </a>
-          ))
+         
         }
       </div>
 
@@ -114,18 +98,7 @@ const socialLinks = [
   <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
     <div class="px-2 pt-2 pb-3 space-y-1">
       {
-        navItems.map((item) => (
-          <a
-            href={item.path}
-            class={`block px-3 py-2 rounded-md text-base  ${
-              currentPath === item.path
-                ? "text-red-600 bg-red-50 font-bold"
-                : "text-gray-700 hover:text-red-600 hover:bg-red-50 font-medium"
-            }`}
-          >
-            {item.name}
-          </a>
-        ))
+        
       }
     </div>
     <div
