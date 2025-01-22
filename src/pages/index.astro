@@ -1,0 +1,111 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout>
+  <section class="bg-black text-white">
+    <header class="flex justify-between items-center px-8 py-4">
+      <!-- Logo -->
+      <div class="text-2xl font-bold">Devasri</div>
+
+      <!-- Navbar -->
+      <nav class="flex space-x-6 text-sm sticky">
+        <a href="#" class="text-yellow-500">Home</a>
+        <!-- <a href="#" class="hover:text-yellow-500">About</a> -->
+        <!-- <a href="#" class="hover:text-yellow-500">Resume</a> -->
+        <a href="#" class="hover:text-yellow-500">Services</a>
+        <a href="#projects" class="hover:text-yellow-500">Projects</a>
+        <a href="#contact" class="hover:text-yellow-500">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="flex flex-col lg:flex-row items-center lg:justify-between px-8 lg:px-20 py-20">
+      <!-- Text Content -->
+      <div>
+        <p class="text-yellow-500 text-sm font-semibold">HELLO!</p>
+        <h1 class="text-5xl font-extrabold mt-2">
+          I'm <span class="text-yellow-500">Devasri</span>
+        </h1>
+        <p class="mt-4 text-xl text-gray-400">A Freelance Web Designer</p>
+        <div class="mt-8 flex space-x-4">
+          <!-- <a
+            href="#"
+            class="bg-yellow-500 text-black font-medium px-6 py-2 rounded-lg shadow hover:bg-yellow-600"
+          >
+            
+          </a> -->
+          <a
+            href="#contact"
+            class="border border-yellow-500 text-yellow-500 font-medium px-6 py-2 rounded-lg hover:bg-yellow-500 hover:text-black"
+          >
+            Contact me
+          </a>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="mt-10 lg:mt-0">
+        <img
+          src="https://via.placeholder.com/500"
+          alt=""
+          class="rounded-full w-full max-w-sm lg:max-w-md"
+        />
+      </div>
+    </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="px-8 lg:px-20 py-12">
+          <h2 class="text-3xl font-bold text-yellow-500">My Projects</h2>
+          <div class="mt-8 space-y-8">
+            <!-- Project Card 1 -->
+            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg flex flex-col lg:flex-row">
+              <img
+                src="https://via.placeholder.com/300"
+                alt="Project 1"
+                class="w-full lg:w-1/3 h-48 lg:h-auto object-cover"
+              />
+              <div class="p-6 flex flex-col justify-between">
+                <h3 class="text-2xl font-bold text-white">Sastika Solutions</h3>
+                <p class="text-gray-400 mt-4">
+                  Portfolio for a trust company using Astro.js & Tailwind CSS
+                </p>
+                <a
+                  href='https://sastika.eu'
+                  class="mt-4 bg-yellow-500 text-black font-medium px-4 py-2 rounded-lg shadow hover:bg-yellow-600 self-start"
+                >
+                View Project
+                </a>
+              </div>
+            </div>
+    
+            <!-- Project Card 2 -->
+            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg flex flex-col lg:flex-row">
+              <img
+                src="https://via.placeholder.com/300"
+                alt="Project 2"
+                class="w-full lg:w-1/3 h-48 lg:h-auto object-cover"
+              />
+              <div class="p-6 flex flex-col justify-between">
+                <h3 class="text-2xl font-bold text-white">Franz-Kingstein</h3>
+                <p class="text-gray-400 mt-4">
+                  Simple student portfolio using HTML & Bootstrap
+                </p>
+                <a
+                  href='https://franzkingstein.site'
+                  class="mt-4 bg-yellow-500 text-black font-medium px-4 py-2 rounded-lg shadow hover:bg-yellow-600 self-start"
+                >
+                  View Project
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+  <section id="contact" class='contact p-10 text-center bg-white-900 '>
+    <h2 class='text-3xl font-bold'>Contact Me</h2>
+    <p class='mt-4 text-lg'>Email: <a href='mailto:devasrisp06@gmail.com' class='text-blue-400 underline'>contact@devasri.com</a></p>
+  </section>
+</Layout>
+<Footer />
