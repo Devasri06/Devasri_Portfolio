@@ -1,0 +1,49 @@
+---
+import {Image} from 'astro:assets';
+import Portfolioimage from '../assets/images/Portfolioimage.png';
+---
+<body>
+<section class="py-20 text-white" id="about">
+    
+    <div class="max-w-6xl mx-auto px-6 md:flex items-center gap-12 scroll-smooth" >
+      <!-- Image -->
+      <div class="md:w-1/2 text-center">
+        <Image src={Portfolioimage} alt="image" class="rounded-lg w-80 md:w-96"/>
+      </div>
+      <!-- Text Content -->
+      <div class="md:w-1/2 mb-12 md:mb-0">
+        
+        <h2 class="text-4xl font-bold text-purple-400 mb-6">
+          Know Who <span class="text-white">I'm</span>
+        </h2>
+        <p class="text-2xl text-gray-300 leading-relaxed mb-4">
+          Hi Everyone, I am <span class="text-purple-400 font-medium">Devasri</span> .
+          <br /><br />
+          A passionate Front-End Developer and Cyber Security student currently pursuing my Bachelor of Engineering in Computer Science and Engineering (Cyber Security)<br />
+          I specialize in crafting beautiful, responsive, and user-friendly websites .
+          Let’s build something amazing together!
+        </p>
+
+
+        <blockquote class="mt-8 text-purple-300 italic border-l-4 pl-4 border-purple-600">
+          "To be powerful, you must first be visible."
+
+          <br /><span class="text-gray-400 not-italic text-sm">— Jude Duarte</span>
+        </blockquote>
+      </div>
+
+      
+
+    </div>
+  </section>
+</body>
+  <style>
+    body {
+      background: radial-gradient(circle at 30% 50%, #0f0c29, #302b63, #24243e);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
