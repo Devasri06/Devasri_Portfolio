@@ -3,7 +3,7 @@ import {Image} from 'astro:assets';
 import contact from '../assets/images/contact.png';
 ---
 
-<section class="py-12 text-white" id="projects">
+<section class="py-12 text-white container">
 
   <div class="max-w-6xl mx-auto px-4">
     <h2 class="text-4xl font-bold text-center items-center mb-8 text-purple-400">Contact me !</h2>
@@ -13,14 +13,14 @@ import contact from '../assets/images/contact.png';
           
            
   </h2>
-  <h2 class="text-3xl font-bold mb-4">
+  <h2 class="text-4xl font-bold mb-4">
     Let's <span class="text-purple-400">Connect</span>
   </h2>
-  <p class="text-sm text-gray-300 mb-8">
+  <p class="text-xl text-gray-300 mb-8">
     Feel free to reach out !
   </p>
 
-  <div class="space-y-4">
+  <div class="space-y-4 text-md">
     <div class="flex items-center space-x-4">
       <div class="bg-purple-700 p-2 rounded-full">
        
@@ -42,6 +42,12 @@ import contact from '../assets/images/contact.png';
       <span>Karur , India</span>
     </div>
   </div>
+  <div class="social-links items-center text-3xl space-x-4 px-6 py-6">
+    <a href="https://github.com/Devasri06/" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/devasri-s-p/" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/_dharshankumarj/" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="mailto:contact@devasri.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+  </div>
   
     </div>
     <div class="mt-12 md:mt-0">
@@ -49,3 +55,13 @@ import contact from '../assets/images/contact.png';
     </div>
   </div>
 </section>
+
+<style>
+   .social-links {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: auto;
+    flex-wrap: wrap;
+}
+
+</style>
